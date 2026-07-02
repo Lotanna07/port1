@@ -44,7 +44,7 @@
                   </li>
 
                   <li class="nav--item">
-                     <a href="#Contact " class="nav--link">Contact Me</a>
+                     <a href="#Contact " class="nav--link nav--link-button">Contact Me</a>
                   </li>
                </ul>
 
@@ -55,6 +55,9 @@
             </div>
 
             <div class = "nav--button">
+
+               <!--theme button-->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
                <!--Toggle button-->
                <div class="nav--toggle" id="nav-toggle">
                   <i class="ri-menu-4-line"></i>
@@ -444,7 +447,10 @@
                               <textarea name="user-message" id="message" class="contact--input" required placeholder="Message"></textarea>
                               <label for="message" class="contact--label">Message</label>
                            </div>
+                              <p class="contact--message" id="contact-message">
+                                 Message sent successfully, I will reply as soon as possible 🙂.
 
+                              </p>
                            <button type="submit" class="contact--button button">
                               <i class="ri-send-plane-line"></i> Send Message
                            </button>
@@ -461,7 +467,7 @@
                            Does not send emails
                         </p>
 
-                        <p class="contact--social-description-1">
+                        <p class="contact--social-description-2">
                            Write me on my social networks
                         </p>
                      </div>
@@ -485,16 +491,39 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
+         <div class="footer--container container grid">
+            <ul class="footer--links">
+               <li>
+                  <a href="#home" class="footer--link active-link">home</a>
+               </li>
+
+               <li>
+                  <a href="#about" class="footer--link">about</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer--link">Projects</a>
+               </li>
+            </ul>
+
+               <span class="footer--copy"></span>
+         </div>
          
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrolluo" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
       
       <!--=============== EMAIL JS ===============-->
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
       
 
       <!--=============== MAIN JS ===============-->
